@@ -864,6 +864,121 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .why-lede{font-size:1rem;margin-bottom:40px}
 }
 
+/* =========== COMPARISON TABLE =========== */
+.compare-section{
+  background:linear-gradient(180deg,var(--white) 0%,var(--gray-50) 100%);
+  color:var(--text);
+  padding:140px 48px;
+  position:relative;
+}
+.compare-section::before{
+  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:80px;height:3px;
+  background:linear-gradient(90deg,var(--royal),var(--sky));
+}
+.compare-inner{max-width:1400px;margin:0 auto}
+.compare-heading{
+  font-family:var(--display);
+  font-size:clamp(2.25rem,5.5vw,4.5rem);
+  font-weight:800;line-height:.98;
+  letter-spacing:-.03em;
+  margin:32px 0 24px;
+  max-width:1100px;
+  text-transform:uppercase;
+}
+.compare-heading em{
+  color:var(--royal);
+  font-style:normal;
+  font-weight:800;
+  display:block;
+}
+.compare-lede{
+  font-size:clamp(1rem,1.35vw,1.2rem);
+  color:var(--gray-600);
+  line-height:1.75;
+  max-width:900px;
+  margin:0 0 56px;
+  font-weight:300;
+}
+.compare-lede strong{color:var(--text);font-weight:600}
+.compare-table-wrap{
+  overflow-x:auto;
+  border:1px solid var(--gray-200);
+  background:var(--white);
+  box-shadow:0 20px 60px rgba(10,23,51,.06);
+}
+.compare-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14.5px;
+  min-width:860px;
+}
+.compare-table thead th{
+  background:var(--navy);
+  color:var(--white);
+  text-align:left;
+  padding:20px 20px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  border-right:1px solid rgba(255,255,255,.08);
+  vertical-align:middle;
+  white-space:nowrap;
+}
+.compare-table thead th:last-child{border-right:none}
+.compare-table thead th.th-altus{
+  background:linear-gradient(135deg,var(--royal) 0%,var(--sky) 100%);
+  color:var(--white);
+  letter-spacing:.12em;
+}
+.compare-table tbody td{
+  padding:18px 20px;
+  border-bottom:1px solid var(--gray-200);
+  border-right:1px solid var(--gray-200);
+  vertical-align:top;
+  line-height:1.55;
+  color:var(--gray-600);
+}
+.compare-table tbody td:last-child{border-right:none}
+.compare-table tbody tr:last-child td{border-bottom:none}
+.compare-table tbody tr:nth-child(even) td{background:rgba(21,101,192,.025)}
+.compare-table td.cmp-factor{
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:-.005em;
+  white-space:nowrap;
+  background:var(--gray-50);
+}
+.compare-table tbody tr:nth-child(even) td.cmp-factor{background:var(--gray-100)}
+.compare-table td.cmp-altus{
+  color:var(--text);
+  background:rgba(41,171,226,.08)!important;
+  border-left:3px solid var(--royal);
+  font-weight:500;
+}
+.compare-table td.cmp-altus strong{color:var(--royal);font-weight:700}
+.compare-footnote{
+  font-size:13px;
+  color:var(--gray-400);
+  margin-top:24px;
+  line-height:1.65;
+  max-width:900px;
+}
+
+@media(max-width:900px){
+  .compare-section{padding:80px 20px}
+  .compare-heading{font-size:clamp(2rem,8vw,3rem)}
+  .compare-table{font-size:13.5px}
+  .compare-table thead th,.compare-table tbody td{padding:14px 14px}
+}
+@media(max-width:600px){
+  .compare-lede{font-size:1rem}
+  .compare-table{font-size:13px}
+  .compare-table thead th{font-size:10px;letter-spacing:.1em;padding:12px 10px}
+  .compare-table tbody td{padding:12px 12px}
+}
+
 /* =========== COMPANY =========== */
 .company-section{
   background:var(--navy);
