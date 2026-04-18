@@ -772,6 +772,98 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .cafta-heading{font-size:clamp(2rem,9vw,3rem)}
 }
 
+/* =========== WHY EL SALVADOR =========== */
+.why-section{
+  background:var(--navy);
+  color:var(--white);
+  padding:140px 48px;
+  position:relative;
+  border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.why-section::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--royal) 0%,var(--sky) 100%);
+}
+.why-inner{max-width:1400px;margin:0 auto}
+.why-section .section-heading-huge{
+  margin-bottom:32px;
+}
+.why-lede{
+  font-size:clamp(1.05rem,1.4vw,1.3rem);
+  color:rgba(255,255,255,.75);
+  line-height:1.7;
+  max-width:900px;
+  margin:0 0 72px;
+  font-weight:300;
+}
+.why-lede strong{color:var(--white);font-weight:600}
+.why-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.08);
+}
+.why-card{
+  background:var(--navy);
+  padding:44px 32px;
+  transition:background .3s var(--ease);
+  position:relative;
+  min-height:240px;
+}
+.why-card:hover{background:var(--navy-mid)}
+.why-card::before{
+  content:'';position:absolute;top:0;left:0;height:2px;width:0;
+  background:linear-gradient(90deg,var(--royal),var(--sky));
+  transition:width .4s var(--ease);
+}
+.why-card:hover::before{width:100%}
+.why-card-wide{
+  grid-column:span 4;
+  background:linear-gradient(135deg,var(--navy-mid) 0%,var(--navy) 70%);
+  border-left:3px solid var(--royal);
+}
+/* card 7 spans 2 on desktop so row 2 fills 5,6,7,7 (no empty cell before the wide #8) */
+.why-grid > .why-card:nth-child(7){grid-column:span 2}
+.why-num{
+  font-family:var(--display);
+  font-size:12px;font-weight:700;
+  color:var(--sky);
+  letter-spacing:.3em;
+  margin-bottom:22px;
+}
+.why-card h3{
+  font-family:var(--display);
+  font-size:clamp(1.2rem,1.6vw,1.5rem);
+  font-weight:700;line-height:1.2;
+  color:var(--white);
+  margin-bottom:14px;
+  letter-spacing:-.015em;
+}
+.why-card p{
+  font-size:14.5px;
+  color:rgba(255,255,255,.55);
+  line-height:1.7;
+  font-weight:300;
+}
+.why-card p strong{color:rgba(255,255,255,.85);font-weight:600}
+
+@media(max-width:1100px){
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .why-card-wide{grid-column:span 2}
+  /* card 7 spans both columns at 2-col width so row 4 is 7,7 and row 5 is 8-wide */
+  .why-grid > .why-card:nth-child(7){grid-column:span 2}
+}
+@media(max-width:700px){
+  .why-section{padding:80px 20px}
+  .why-grid{grid-template-columns:1fr}
+  .why-card-wide{grid-column:span 1}
+  .why-card{padding:32px 22px;min-height:auto}
+  .why-card h3{font-size:1.2rem}
+  .why-card p{font-size:14px}
+  .why-lede{font-size:1rem;margin-bottom:40px}
+}
+
 /* =========== COMPANY =========== */
 .company-section{
   background:var(--navy);

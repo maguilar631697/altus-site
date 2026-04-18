@@ -6,6 +6,7 @@ const translations = {
     nav_caps: "Capacidades",
     nav_quality: "Calidad",
     nav_markets: "Mercados",
+    nav_why: "Por qué El Salvador",
     nav_cafta: "CAFTA-DR",
     nav_contact: "Contacto",
 
@@ -78,6 +79,27 @@ const translations = {
     mk6_title: "Reparación y Reemplazo",
     mk6_body: "Whips, jumpers y componentes de desconexión FV de repuesto para cuadrillas de O&amp;M que dan servicio a arreglos envejecidos. Producción de vuelta rápida en las mismas líneas que nuestros programas de nueva construcción.",
 
+    // Why El Salvador
+    why_eyebrow: "Por qué El Salvador",
+    why_title: 'El nuevo nearshore.<br><em>Construido para lo solar.</em>',
+    why_lede: "México está saturado. China está fuera de precio. La capacidad doméstica en EE.UU. no puede escalar al ritmo de la década solar. El Salvador se ubica en la intersección de acceso libre de aranceles a EE.UU., estabilidad denominada en dólares y una fuerza laboral industrial moderna — y Altus es el ancla de balance-of-system solar en ese nuevo nearshore.",
+    why1_title: "Libre de aranceles al mercado solar más grande",
+    why1_body: "CAFTA-DR enruta producto HTS 8544 a Estados Unidos con <strong>arancel cero</strong>. Mientras la tier China enfrenta aranceles Sección 301, revisiones AD/CVD y retenciones UFLPA, Altus exporta con origen CAFTA-DR limpio y cumplimiento de regla de cambio arancelario documentado en cada factura.",
+    why2_title: "Economía en dólares. Sin riesgo cambiario.",
+    why2_body: "El Salvador opera en dólar estadounidense desde 2001. Órdenes de compra, nómina y facturas de materias primas se liquidan en la misma moneda que el cliente — sin volatilidad peso / yuan / lempira que cotizar o cubrir.",
+    why3_title: "Paquete fiscal de zona franca",
+    why3_body: "La Zona Franca Concordia entrega <strong>0% arancel</strong> sobre materias primas, <strong>0% impuesto sobre la renta</strong> en exportaciones, <strong>0% impuesto municipal</strong> y <strong>0% impuesto de transferencia inmobiliaria</strong> — respaldados por la Ley de Zonas Francas y la Ley de Ampliación de Inversiones 2026. 100% de propiedad extranjera permitida.",
+    why4_title: "Una zona horaria desde la matriz",
+    why4_body: "El Salvador opera en Horario Central. Llamadas de ingeniería, revisiones PPAP y entregas de producción ocurren en horas hábiles — sin demoras nocturnas, sin hilos de correo de una semana atrás, sin &lsquo;esperar al lunes en Shenzhen.&rsquo;",
+    why5_title: "Puerto en el Pacífico · Tres días de océano",
+    why5_body: "El Puerto de Acajutla está a 90 minutos de nuestra entrada. Servicio oceánico directo a Los Ángeles / Long Beach, Houston y Port Everglades atiende los tres corredores solares más grandes de EE.UU. en tránsito de 3 a 10 días — más rápido que transpacífico y sin exposición al canal.",
+    why6_title: "Fuerza laboral, capacitable y disponible",
+    why6_body: "Una fuerza laboral manufacturera joven con costo cargado aproximadamente <strong>un tercio del de la frontera mexicana</strong>, liderazgo técnico que habla inglés, programas vocacionales industriales y eléctricos financiados por INSAFORP en el país y un gobierno que activamente encamina talento hacia inversiones de nearshoring.",
+    why7_title: "Viento político a favor · Entorno estable",
+    why7_body: "La inversión extranjera directa es política nacional bajo la administración actual. La Secretaría de Comercio e Inversiones es punto de contacto directo. La tasa de homicidios de El Salvador ha caído a <strong>la más baja del hemisferio occidental</strong> fuera de Canadá, y los permisos avanzan en plazos de semanas en lugar de años — una ventaja material para manufactureros extranjeros evaluando operaciones en Latinoamérica.",
+    why8_title: "Un verdadero segundo origen para las Américas",
+    why8_body: "Para clientes que ya operan producción doméstica bajo Buy America / BABA, Altus es el carril complementario sensible a costo para programas a escala utility, exportación LATAM y volumen de salida de China. Una cadena de suministro, dos geografías, cero fricción arancelaria en ambos extremos.",
+
     // CAFTA
     c_eyebrow: "Ventaja Estratégica",
     c_t1: "Su puerta al",
@@ -119,6 +141,7 @@ const translations = {
     ft_caps: "Capacidades",
     ft_quality: "Calidad",
     ft_markets: "Mercados",
+    ft_why: "Por qué El Salvador",
     ft_cafta: "CAFTA-DR",
     ft_contact: "Contacto",
     ft_legal: "Todos los derechos reservados. Nombres comerciales y especificaciones sujetos a cambio."
