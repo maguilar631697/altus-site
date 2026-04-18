@@ -59,9 +59,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   display:flex;align-items:center;
 }
 .nav-logo-img{
-  height:48px;width:auto;
-  transition:opacity .2s;
+  height:72px;width:auto;
+  transition:all .3s var(--ease);
+  filter:drop-shadow(0 2px 12px rgba(0,0,0,.25));
 }
+.nav.scrolled .nav-logo-img{height:52px}
 .nav-brand:hover .nav-logo-img{opacity:.85}
 .nav-links{
   display:flex;gap:36px;align-items:center;
@@ -91,9 +93,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 @media(max-width:700px){
   .nav-links a:not(.nav-cta){display:none}
-  .nav{padding:16px 20px}
+  .nav{padding:12px 20px}
   .nav-brand{font-size:14px;letter-spacing:.2em}
-  .nav-logo-img{height:34px}
+  .nav-logo-img{height:56px}
+  .nav.scrolled .nav-logo-img{height:44px}
   .lang-toggle{display:none}
 }
 
@@ -177,6 +180,17 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-left{flex:1;min-width:0}
 .hero-right{flex:0 0 320px;display:flex;flex-direction:column;gap:16px;padding-bottom:8px}
 
+.hero-logo{
+  width:clamp(260px,32vw,440px);
+  height:auto;
+  margin-bottom:32px;
+  filter:drop-shadow(0 8px 40px rgba(0,0,0,.5)) drop-shadow(0 0 60px rgba(212,160,23,.15));
+  animation:heroLogoIn 1.2s var(--ease) both;
+}
+@keyframes heroLogoIn{
+  from{opacity:0;transform:translateY(30px) scale(.95)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
 .hero-eyebrow{
   font-size:12px;font-weight:700;
   letter-spacing:.35em;text-transform:uppercase;
@@ -190,9 +204,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 .hero-title{
   font-family:var(--serif);
-  font-size:clamp(4rem,14vw,12rem);
-  font-weight:900;line-height:.85;
-  letter-spacing:-.04em;
+  font-size:clamp(3rem,9vw,7.5rem);
+  font-weight:900;line-height:.9;
+  letter-spacing:-.03em;
   color:var(--white);
   text-transform:uppercase;
   margin-bottom:24px;
@@ -202,7 +216,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   color:var(--gold-bright);
   font-style:italic;
   text-transform:none;
-  font-size:.85em;
+  font-size:.9em;
   letter-spacing:-.03em;
   line-height:1;
   margin-top:.05em;
@@ -812,8 +826,9 @@ footer{
   font-weight:700;
 }
 .footer-logo-img{
-  height:100px;width:auto;
-  margin-bottom:20px;
+  height:160px;width:auto;
+  margin-bottom:24px;
+  filter:drop-shadow(0 4px 20px rgba(0,0,0,.3));
 }
 .footer-desc{
   font-size:17px;line-height:1.8;
