@@ -59,11 +59,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   display:flex;align-items:center;
 }
 .nav-logo-img{
-  height:240px;width:auto;
+  height:144px;width:auto;
   transition:all .3s var(--ease);
-  filter:drop-shadow(0 6px 30px rgba(0,0,0,.35));
+  filter:drop-shadow(0 4px 20px rgba(0,0,0,.3));
 }
-.nav.scrolled .nav-logo-img{height:140px}
+.nav.scrolled .nav-logo-img{height:90px}
 .nav-brand:hover .nav-logo-img{opacity:.85}
 .nav-links{
   display:flex;gap:36px;align-items:center;
@@ -95,8 +95,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .nav-links a:not(.nav-cta){display:none}
   .nav{padding:8px 20px}
   .nav-brand{font-size:14px;letter-spacing:.2em}
-  .nav-logo-img{height:160px}
-  .nav.scrolled .nav-logo-img{height:110px}
+  .nav-logo-img{height:100px}
+  .nav.scrolled .nav-logo-img{height:72px}
   .lang-toggle{display:none}
 }
 
