@@ -3,3 +3,7 @@ node_modules/
 .vscode/
 .idea/
 *.log
+# Generated previews / backups
+altus-preview*.png
+altus-preview*.pdf
+*.bak-*
