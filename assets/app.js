@@ -23,7 +23,7 @@ const translations = {
 
     // Marquees
     mq: "Ensamblajes de Cable FV &nbsp;·&nbsp; Conectores Ramales &nbsp;·&nbsp; Cajas de Desconexión &nbsp;·&nbsp; Fusibles en Línea &nbsp;·&nbsp; Jumpers FV &nbsp;·&nbsp; Libre de Aranceles CAFTA-DR &nbsp;·&nbsp; Hecho en El Salvador &nbsp;·&nbsp;",
-    mq2: "Zona Franca Concordia &nbsp;·&nbsp; Jiquilisco, Usulután &nbsp;·&nbsp; El Salvador &nbsp;·&nbsp; Puerto de Acajutla &nbsp;·&nbsp; HTS 8544 · Libre de Aranceles a EE.UU. &nbsp;·&nbsp;",
+    mq2: "Quelepa &nbsp;·&nbsp; San Miguel &nbsp;·&nbsp; El Salvador &nbsp;·&nbsp; Zona Franca &nbsp;·&nbsp; HTS 8544 · Libre de Aranceles a EE.UU. &nbsp;·&nbsp;",
 
     // Mission
     m_eyebrow: "Nuestra Misión",
@@ -89,11 +89,11 @@ const translations = {
     why2_title: "Economía en dólares. Sin riesgo cambiario.",
     why2_body: "El Salvador opera en dólar estadounidense desde 2001. Órdenes de compra, nómina y facturas de materias primas se liquidan en la misma moneda que el cliente — sin volatilidad peso / yuan / lempira que cotizar o cubrir.",
     why3_title: "Paquete fiscal de zona franca",
-    why3_body: "La Zona Franca Concordia entrega <strong>0% arancel</strong> sobre materias primas, <strong>0% impuesto sobre la renta</strong> en exportaciones, <strong>0% impuesto municipal</strong> y <strong>0% impuesto de transferencia inmobiliaria</strong> — respaldados por la Ley de Zonas Francas y la Ley de Ampliación de Inversiones 2026. 100% de propiedad extranjera permitida.",
+    why3_body: "El régimen de Zonas Francas de El Salvador entrega <strong>0% arancel</strong> sobre materias primas, <strong>0% impuesto sobre la renta</strong> en exportaciones, <strong>0% impuesto municipal</strong> y <strong>0% impuesto de transferencia inmobiliaria</strong> — respaldados por la Ley de Zonas Francas y la Ley de Ampliación de Inversiones 2026. 100% de propiedad extranjera permitida.",
     why4_title: "Una zona horaria desde la matriz",
     why4_body: "El Salvador opera en Horario Central. Llamadas de ingeniería, revisiones PPAP y entregas de producción ocurren en horas hábiles — sin demoras nocturnas, sin hilos de correo de una semana atrás, sin &lsquo;esperar al lunes en Shenzhen.&rsquo;",
-    why5_title: "Puerto en el Pacífico · Tres días de océano",
-    why5_body: "El Puerto de Acajutla está a 90 minutos de nuestra entrada. Servicio oceánico directo a Los Ángeles / Long Beach, Houston y Port Everglades atiende los tres corredores solares más grandes de EE.UU. en tránsito de 3 a 10 días — más rápido que transpacífico y sin exposición al canal.",
+    why5_title: "Rutas oceánicas de corta distancia",
+    why5_body: "La red logística de El Salvador con salida al Pacífico y al Atlántico alcanza los tres corredores solares más grandes de EE.UU. — Los Ángeles / Long Beach, Houston y Port Everglades — en <strong>tránsito oceánico de 3 a 10 días</strong>. Más rápido que transpacífico, sin exposición al canal y más cerca del sitio de obra que cualquier otro origen de bajo arancel.",
     why6_title: "Fuerza laboral, capacitable y disponible",
     why6_body: "Una fuerza laboral manufacturera joven con costo cargado aproximadamente <strong>un tercio del de la frontera mexicana</strong>, liderazgo técnico que habla inglés, programas vocacionales industriales y eléctricos financiados por INSAFORP en el país y un gobierno que activamente encamina talento hacia inversiones de nearshoring.",
     why7_title: "Viento político a favor · Entorno estable",
@@ -116,7 +116,7 @@ const translations = {
     cmp_r1_t: "MFN base + salvaguardas sector solar",
     cmp_r1_i: "MFN base + incertidumbre GSP",
     cmp_r2_f: "Tránsito oceánico a EE.UU.",
-    cmp_r2_a: "<strong>3&ndash;10 días</strong> desde Acajutla a LA / Houston / Everglades",
+    cmp_r2_a: "<strong>3&ndash;10 días</strong> oceánico a LA / Houston / Everglades",
     cmp_r2_c: "25&ndash;40 días transpacífico + demora costa oeste",
     cmp_r2_t: "18&ndash;28 días vía Suez / costa este",
     cmp_r2_i: "28&ndash;40 días vía Suez / Cabo",
@@ -150,7 +150,7 @@ const translations = {
     cmp_r8_c: "El problema que los compradores intentan resolver",
     cmp_r8_t: "Funciona, pero sin beneficio arancelario CAFTA-DR",
     cmp_r8_i: "Funciona, pero con mayores tiempos y sin beneficio arancelario",
-    cmp_foot: "La comparación refleja condiciones estándar de compras de balance-of-system solar a escala utility. Aranceles, tiempos de tránsito y posiciones cambiarias varían; Altus mantiene modelos vigentes de costo puesto para revisión del cliente durante la calificación.",
+    cmp_foot: "Envíenos su SKU objetivo, volumen anual y la cotización offshore actual — construimos un modelo de costo puesto lado a lado (precio unitario + flete oceánico + arancel + honorarios de agencia + costo de inventario en tránsito) y le mostramos el número real, no solo el precio de fábrica.",
 
     // CAFTA
     c_eyebrow: "Ventaja Estratégica",
@@ -158,8 +158,8 @@ const translations = {
     c_t2: "acceso libre de aranceles a EE.UU.",
     c_body1: "Bajo el Tratado de Libre Comercio entre República Dominicana, Centroamérica y Estados Unidos (<strong>CAFTA-DR</strong>), los ensamblajes y arneses de cable FV manufacturados en El Salvador ingresan a EE.UU. <strong>libres de aranceles</strong> bajo clasificación HTS 8544 — siempre que se cumpla la regla de cambio arancelario.",
     c_body2: "La estrategia de Altus Energy está diseñada para calificar: cable FV y materias primas de proveedores de origen CAFTA-DR y NAFTA, con transformación sustancial en El Salvador. El resultado es una cadena de suministro competitiva en costo y libre de aranceles hacia el mercado solar más grande de las Américas.",
-    cs1_unit: "minutos",
-    cs1_label: "Al Puerto de Acajutla",
+    cs1_unit: "días",
+    cs1_label: "Tránsito oceánico a puertos de EE.UU.",
     cs2_unit: "zona horaria",
     cs2_label: "Misma que EE.UU. Central",
     cs3_unit: "Código HTS",
