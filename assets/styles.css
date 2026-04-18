@@ -36,10 +36,19 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* =========== NAV =========== */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:20px 32px;
+  padding:16px 32px;
   display:flex;align-items:center;justify-content:space-between;
-  mix-blend-mode:difference;
-  transition:padding .3s var(--ease);
+  transition:all .3s var(--ease);
+  background:rgba(10,15,28,.0);
+  backdrop-filter:blur(0);
+  -webkit-backdrop-filter:blur(0);
+}
+.nav.scrolled{
+  padding:12px 32px;
+  background:rgba(10,15,28,.85);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.06);
 }
 .nav-brand{
   font-family:var(--serif);
@@ -47,7 +56,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   color:var(--white);
   letter-spacing:.3em;
   text-transform:uppercase;
+  display:flex;align-items:center;
 }
+.nav-logo-img{
+  height:48px;width:auto;
+  transition:opacity .2s;
+}
+.nav-brand:hover .nav-logo-img{opacity:.85}
 .nav-links{
   display:flex;gap:36px;align-items:center;
 }
@@ -78,6 +93,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .nav-links a:not(.nav-cta){display:none}
   .nav{padding:16px 20px}
   .nav-brand{font-size:14px;letter-spacing:.2em}
+  .nav-logo-img{height:34px}
   .lang-toggle{display:none}
 }
 
@@ -794,6 +810,10 @@ footer{
   letter-spacing:.05em;
   text-transform:none;
   font-weight:700;
+}
+.footer-logo-img{
+  height:100px;width:auto;
+  margin-bottom:20px;
 }
 .footer-desc{
   font-size:17px;line-height:1.8;

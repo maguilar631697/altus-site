@@ -156,4 +156,15 @@ document.addEventListener('DOMContentLoaded', () => {
       setLanguage(currentLang === 'en' ? 'es' : 'en');
     });
   }
+
+  // Nav scroll effect
+  const nav = document.querySelector('.nav');
+  if (nav) {
+    const onScroll = () => {
+      if (window.scrollY > 60) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  }
 });
