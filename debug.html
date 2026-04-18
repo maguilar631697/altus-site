@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=393,initial-scale=1"></head>
+<body style="margin:0">
+<iframe src="./index.html" width="393" height="900" style="border:0"></iframe>
+<script>
+setTimeout(() => {
+  const f = document.querySelector('iframe');
+  const doc = f.contentDocument;
+  const nav = doc.querySelector('.nav');
+  const links = doc.querySelector('.nav-links');
+  const cta = doc.querySelector('.nav-cta');
+  const img = doc.querySelector('.nav-logo-img');
+  const body = doc.body;
+  document.title = 'Viewport: ' + f.contentWindow.innerWidth +
+    ' | Nav: ' + nav.getBoundingClientRect().width +
+    ' | Links: ' + links.getBoundingClientRect().width +
+    ' | CTA right: ' + cta.getBoundingClientRect().right +
+    ' | Logo w: ' + img.getBoundingClientRect().width;
+  document.body.innerHTML = document.title + '<br>' + f.outerHTML;
+}, 3000);
+</script>
+</body></html>
