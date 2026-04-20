@@ -68,11 +68,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   display:flex;align-items:center;
 }
 .nav-logo-img{
-  height:144px;width:auto;
+  height:220px;width:auto;
   transition:all .3s var(--ease);
-  filter:drop-shadow(0 4px 20px rgba(0,0,0,.3));
+  filter:drop-shadow(0 4px 24px rgba(0,0,0,.4)) drop-shadow(0 0 40px rgba(41,171,226,.15));
 }
-.nav.scrolled .nav-logo-img{height:90px}
+.nav.scrolled .nav-logo-img{height:110px;filter:drop-shadow(0 2px 12px rgba(0,0,0,.3)) drop-shadow(0 0 20px rgba(41,171,226,.1))}
 .nav-brand:hover .nav-logo-img{opacity:.85}
 .nav-links{
   display:flex;gap:36px;align-items:center;
@@ -112,8 +112,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 @media(max-width:700px){
   .nav{padding:6px 14px;gap:8px}
   .nav.scrolled{padding:6px 14px}
-  .nav-logo-img{height:54px}
-  .nav.scrolled .nav-logo-img{height:44px}
+  .nav-logo-img{height:80px}
+  .nav.scrolled .nav-logo-img{height:56px}
   .nav-brand{min-width:0;flex-shrink:1;overflow:hidden}
   .nav-links{gap:6px;flex-shrink:0}
   .nav-links .nav-cta{padding:5px 10px;font-size:10px;letter-spacing:.06em;white-space:nowrap}
@@ -122,15 +122,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 @media(max-width:480px){
   .nav{padding:4px 10px;gap:5px}
   .nav.scrolled{padding:4px 10px}
-  .nav-logo-img{height:44px}
-  .nav.scrolled .nav-logo-img{height:38px}
+  .nav-logo-img{height:64px}
+  .nav.scrolled .nav-logo-img{height:44px}
   .nav-links{gap:4px}
   .nav-links .nav-cta{padding:4px 8px;font-size:9px;letter-spacing:.04em}
   .lang-toggle{padding:3px 6px;font-size:9px;letter-spacing:.04em;border-radius:12px}
 }
 @media(max-width:360px){
   .nav{padding:3px 8px}
-  .nav-logo-img{height:38px}
+  .nav-logo-img{height:54px}
   .nav-links .nav-cta{padding:3px 6px;font-size:8.5px}
   .lang-toggle{padding:2px 5px;font-size:8.5px}
 }
@@ -1180,7 +1180,7 @@ footer{
   font-weight:700;
 }
 .footer-logo-img{
-  height:160px;width:auto;
+  height:200px;width:auto;
   margin-bottom:24px;
   filter:drop-shadow(0 4px 20px rgba(0,0,0,.3));
 }
